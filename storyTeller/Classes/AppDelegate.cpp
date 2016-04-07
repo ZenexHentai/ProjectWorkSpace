@@ -47,6 +47,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
 		director->setOpenGLView(glview);
 	}
 
+	director->setContentScaleFactor(1024.0 / director->getWinSize().width);
+
 	// turn on display FPS
 	director->setDisplayStats(true);
 
